@@ -149,7 +149,7 @@ def sizeof_fmt(num, suffix="B"):
         num /= 1024.0
     return f"{num:.1f}Yi{suffix}"
 
-def get_files_size(path: list|str):
+def get_files_size(path):
     inputs = path if type(path) is list else [path]
     return sum([os.path.getsize(path) for path in inputs])
 
