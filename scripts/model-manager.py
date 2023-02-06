@@ -170,7 +170,7 @@ def get_model_dir(model_type = None):
         model_dir = "embeddings"
     elif model_type == 'AestheticGradient':
         model_dir = "extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
-    elif model_type == 'models/VAE':
+    elif model_type == 'VAE':
         model_dir = 'models/VAE'
     elif model_type == 'LoRA':
         model_dir = "extensions/sd-webui-additional-networks/models/lora"
