@@ -16,7 +16,6 @@ NO_SELECT = "<no select>"
 
 def get_file_name_from_url(url):
     r = requests.get(url, headers={"Range": f"bytes=0-10"})
-    print(r.status_code)
     if r.status_code >= 400:
         raise Exception("Resource not found.")
     d = r.headers['content-disposition']
