@@ -172,7 +172,7 @@ def get_model_dir(model_type = None):
     elif model_type == 'VAE':
         model_dir = 'models/VAE'
     elif model_type == 'LoRA':
-        model_dir = "extensions/sd-webui-additional-networks/models/lora"
+        model_dir = "models/Lora"
     if model_dir and not os.path.exists(model_dir):
         os.makedirs(model_dir)
     return model_dir
